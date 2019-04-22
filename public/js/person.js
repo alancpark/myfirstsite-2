@@ -84,29 +84,17 @@
 /******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ "./resources/js/person.js":
-/*!********************************!*\
-  !*** ./resources/js/person.js ***!
-  \********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open '/Users/alan/Code/myfirstsite/resources/js/person.js'");
-
-/***/ }),
-
-/***/ 1:
+/******/ ([
+/* 0 */,
+/* 1 */
 /*!**************************************!*\
   !*** multi ./resources/js/person.js ***!
   \**************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/alan/Code/myfirstsite/resources/js/person.js */"./resources/js/person.js");
+!(function webpackMissingModule() { var e = new Error("Cannot find module '/Users/alan/Code/myfirstsite-2/resources/js/person.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
 
 
 /***/ })
-
-/******/ });
+/******/ ]);

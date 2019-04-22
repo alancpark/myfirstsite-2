@@ -49270,20 +49270,18 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
 Vue.component('example-component', __webpack_require__(/*! ./components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue")["default"]);
-Vue.component('tabs', {
-  template: "\n        <div>\n            <div class=\"tabs\">\n                <ul>\n                    <li v-for=\"tab in tabs\">{{ slot }}</li>\n                </ul>\n            </div>\n        </div>\n        ",
-  data: function data() {
-    return {
-      tabs: []
-    };
-  },
-  created: function created() {
-    console.log(this.$children);
-    this.tabs = this.$children;
+var source = {
+  user: {
+    name: 'John Doexx'
   }
+};
+new Vue({
+  el: "#one",
+  data: source
 });
-Vue.component('tab', {
-  template: "\n        <div>\n            <slot></slot>\n        </div>\n        "
+new Vue({
+  el: "#two",
+  data: source
 }); /////////////////////////////////////////////////////////////////////////////
 // Vue.component('tabs', {
 //     template: `
@@ -49341,15 +49339,15 @@ Vue.component('tab', {
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
-
-var app = new Vue({
-  el: '#app',
-  data: function data() {
-    return {
-      showModal: false
-    };
-  }
-});
+//
+// const app = new Vue({
+//     el: '#app',
+//     data(){
+//         return {
+//             showModal: false
+//         }
+//     }
+// });
 
 /***/ }),
 
@@ -49498,8 +49496,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/alan/Code/myfirstsite/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/alan/Code/myfirstsite/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/alan/Code/myfirstsite-2/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/alan/Code/myfirstsite-2/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

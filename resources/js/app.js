@@ -22,32 +22,21 @@ window.Vue = require('vue');
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 
-    Vue.component('tabs', {
-        template: `
-        <div>
-            <div class="tabs">
-                <ul>
-                    <li v-for="tab in tabs">{{ slot }}</li>
-                </ul>
-            </div>
-        </div>
-        `,
-        data(){
-            return { tabs: [] }
-        },
-        created(){
-            console.log(this.$children);
-            this.tabs = this.$children;
-        }
-    })
+let source = {
+    user: {
+        name: 'John Doexx'
+    }
+};
 
-    Vue.component('tab',{
-        template: `
-        <div>
-            <slot></slot>
-        </div>
-        `
-    })
+new Vue({
+    el: "#one",
+    data: source
+});
+
+new Vue({
+    el: "#two",
+    data: source
+});
 
 /////////////////////////////////////////////////////////////////////////////
 
@@ -108,13 +97,13 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
-
-const app = new Vue({
-    el: '#app',
-    data(){
-        return {
-            showModal: false
-        }
-    }
-});
+//
+// const app = new Vue({
+//     el: '#app',
+//     data(){
+//         return {
+//             showModal: false
+//         }
+//     }
+// });
 
